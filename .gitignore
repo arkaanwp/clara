@@ -1,0 +1,16 @@
+# Python Environment
+venv/
+__pycache__/
+*.pyc
+
+# Sensitive Configuration Files
+.env
+
+# Flutter Environment
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# IDE Files
+.idea/
+.vscode/

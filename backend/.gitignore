@@ -1,0 +1,11 @@
+# Python Environment
+venv/
+__pycache__/
+*.pyc
+
+# Sensitive Configuration Files
+.env
+
+# IDE Files
+.idea/
+.vscode/

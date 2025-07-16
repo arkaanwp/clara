@@ -7,7 +7,7 @@ python-decouple
 
 # Microservices & AI
 fastapi
-"uvicorn[standard]"
+uvicorn
 python-multipart
 torch
 transformers
@@ -15,3 +15,4 @@ datasets
 evaluate
 sentencepiece
 requests
+openai

@@ -1,7 +1,25 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
+import 'clara_ask_identity_screen.dart';
 
-class ClaraWelcomeScreen extends StatelessWidget {
+class ClaraWelcomeScreen extends StatefulWidget {
   const ClaraWelcomeScreen({super.key});
+
+  @override
+  State<ClaraWelcomeScreen> createState() => _ClaraWelcomeScreenState();
+}
+
+class _ClaraWelcomeScreenState extends State<ClaraWelcomeScreen> {
+  @override
+  void initState() {
+    super.initState();
+    // Navigasi otomatis ke screen berikutnya setelah 2 detik
+    Timer(const Duration(seconds: 2), () {
+      Navigator.of(context).pushReplacement(
+        MaterialPageRoute(builder: (context) => const ClaraAskIdentityScreen()),
+      );
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +31,7 @@ class ClaraWelcomeScreen extends StatelessWidget {
           children: [
             // Avatar Clara
             Image.asset(
-              'assets/clara/Normal.png',
+              'assets/clara/normal.png',
               width: 350,
               height: 350,
               fit: BoxFit.contain,
